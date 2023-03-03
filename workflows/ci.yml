@@ -16,6 +16,16 @@ on:
 
 jobs:
   lint:
+   # Lint our Dockerfile using Hadolint
+  dockerfile-lint:
+    name: Dockerfile Lint
+    runs-on: ubuntu-latest
+    steps:
+      # https://github.com/marketplace/actions/hadolint-action
+      - uses: actions/checkout@v3
+      - uses: hadolint/hadolint-action@v3.1.0
+        with:
+          dockerfile: Dockerfile
     # Give your job a name that will show up in the GitHub Actions web UI
     name: ESLint
     # We'll run this on a Linux (Ubuntu) VM, since we'll deploy on Linux too.
