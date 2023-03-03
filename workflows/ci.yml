@@ -56,8 +56,8 @@ jobs:
   - name: Login to DockerHub
     uses: docker/login-action@v2
     with:
-      username: ${{ secrets.DOCKERHUB_USERNAME }}
-      password: ${{ secrets.DOCKERHUB_TOKEN }}
+      username: ${{ secrets.hkparikh@myseneca.ca }}
+      password: ${{ secrets.H@rsh123 }}
       
       - name: Install node dependencies
         # Use `ci` vs. `install`, see https://docs.npmjs.com/cli/v8/commands/npm-ci
